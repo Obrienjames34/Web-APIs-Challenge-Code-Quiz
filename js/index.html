@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High Scores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Coding Quiz</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="highscores"
-            <h1>Highscores</h1>
+    <div class=row>
+        <div class="scores"><a href="highscores.html">View Highscores</a></div>
+
+        <div class="timer">Time: <span id="time">0</span></div>
     </div>
-    <ol id="scoreboard"></ol>
-</div>
-<button class="btn" id="goback">GoBack</button>
-<button class="btn" id="clearHighScores">Clear Highscores</button>
-</div>
+
+    <div class="wrapper">
+        <div id="start-quiz" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by ten seconds!</p>
+            <button class="btn" id="startBtn">Start Quiz</button>
+        </div>
+
+        <div class="question" id="questionContainer"></div>
+    </div>
+    <h1>All done!</h1>
+    <p class="finalScore"></p>
+    <form>
+        <input type="text" id="initials" name="initials" placeholder="Your initials">
+        <label for="initials">Enter initials:</label>
+        <button class="btn" id="submitBtn">Submit</button>
+    </form>
 </div>
 
-    <script src="./assets/js/script.js"></script>
+</div>
+
+
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
