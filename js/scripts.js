@@ -61,7 +61,6 @@ if (window.location.pathname === "/challenge-module-4/highscores.html") {
         let scoreBoardEl = document.getElementById("scoreBoard");
         scoreBoardEl.innerHTML = "";
     }
-
 }
 
 if (goBackBtn) {
@@ -163,21 +162,21 @@ function doneGame() {
 
 }
 
-function highScores() {
+ function highScores() {
 
-    var submitScores = document.querySelector("#submitBtn");
-    submitScores.addEventListener("click", function () {
-        // capture initials, save to local storage, and go to highscores page
-        let initialsEl = document.querySelector("#initials");
-        let initials = initialsEl.value;
-        let localScores = JSON.parse(localStorage.getItem("highScores"));
-        localScores.push({
-            name: initials,
-            score: time
+        var submitScores = document.querySelector("#submitBtn");
+        submitScores.addEventListener("click", function () {
+            // capture initials, save to local storage, and go to highscores page
+            let initialsEl = document.querySelector("#initials");
+            let initials = initialsEl.value;
+            let localScores = JSON.parse(localStorage.getItem("highScores"));
+            localScores.push({
+                name: initials,
+                score: time
+            });
+            localStorage.setItem("highScores", JSON.stringify(localScores));
+            window.open("./highscores.html");
+
         });
-        localStorage.setItem("highScores", JSON.stringify(localScores));
-        window.open("./highscores.html");
-
-    });
-};
+    };
 }
