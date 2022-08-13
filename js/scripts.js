@@ -1,3 +1,5 @@
+console.dir(window.document);
+
 var body = document.body;
 var currentQuestionIndex = -1;
 var quizData = [
