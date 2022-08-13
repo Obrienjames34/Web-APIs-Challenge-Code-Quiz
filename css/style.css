@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper, .done {
@@ -51,4 +51,8 @@ background-color: blueviolet;
 
 .done {
     display: none;
+}
+
+.startQuiz {
+    display: contents;
 }
