@@ -1,7 +1,6 @@
 # Code Quiz
 
 # Description
-This Code Quiz shows the following:
 
 A quiz on Javascript that stores high numbers
 Once clicked the start button, questions appear with multiple choice answers
@@ -34,4 +33,12 @@ THEN I can save my initials and score
 # Installation
 
 To install this application, clone the code into your terminal for the respective repository.
+
+# Usage 
+
+1. Click start quiz to start
+2. Click on a multiple choice option to navigate to next question
+3. Once all questions are completed, enter your initials and hit sumbmit
+4. highscores will be displayed in the Highscores page
+
 
