@@ -1,5 +1,3 @@
-console.dir(window.document);
-
 var body = document.body;
 var currentQuestionIndex = -1;
 var quizData = [
@@ -29,7 +27,6 @@ var quizData = [
         correctAns: 3
     }
 ];
-
 var time = 60;
 var timer;
 var display = document.querySelector("#time");
@@ -48,10 +45,9 @@ if (window.location.pathname === "/challenge-module-4/highscores.html") {
         liEl.textContent = scores[i].name + " - " + scores[i].score;
         scoreBoard.appendChild(liEl);
     }
-
- // Clear HighScores
+// Clear HighScores
  var clearBtn = document.getElementById("clearHighScores");
- var goBackBtn = document.getElementById("goBack")}
+ var goBackBtn = document.getElementById("goBack")
 
  if (clearBtn) {
     clearBtn.addEventListener("click", clearScores);
@@ -70,7 +66,7 @@ if (goBackBtn) {
         window.open("./index.html");
     });
 }
-     else {
+        else {
     // local storage end
 
     //Start quiz start
@@ -181,4 +177,4 @@ function doneGame() {
 
         });
     };
-}
+}}
